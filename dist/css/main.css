@@ -156,13 +156,19 @@ body {
 }
 
 /* 2. Content ====================================== */
+
+#bp-img.lazy{
+  background-image: none;
+  background-color: #777;
+}
+
 header {
   display: flex;
   align-items: center;
   width: 100%;
   height: 200px;
   padding: 20px;
-  background-image: url("/src/img/cove.jpg");
+  background-image: url("../../src/img/cove.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -184,6 +190,11 @@ main {
 main .gallery-title {
   margin: 3rem 0;
 }
+
+#imgCOnt.lazy img{
+  display: none;
+}
+
 main .gallery-title h1 {
   font-size: 2.5rem;
   line-height: 3rem;
